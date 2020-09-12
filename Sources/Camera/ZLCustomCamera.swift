@@ -638,7 +638,7 @@ public class ZLCustomCamera: UIViewController, CAAnimationDelegate {
         }
         // ui坐标转换为摄像头坐标
         let cameraPoint = self.previewLayer?.captureDevicePointConverted(fromLayerPoint: point) ?? self.view.center
-        self.focusCamera(mode: .continuousAutoFocus, exposureMode: .autoExpose, point: cameraPoint)
+        self.focusCamera(mode: .continuousAutoFocus, exposureMode: .continuousAutoExposure, point: cameraPoint)
     }
     
     // 调整焦距
